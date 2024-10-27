@@ -1,0 +1,61 @@
+@import '../../theme.scss';
+
+.header {
+    padding: $space-16 $space-24;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logoWrapper {
+        width: 100px;
+        appearance: none;
+        border: none;
+        background-color: transparent;
+        display: inline-block;
+
+        .logoIcon {
+            object-fit: contain;
+            filter: invert(1);
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    .rightSide {
+        display: flex;
+        gap: 4rem;
+        .nav {        
+            .list{
+                display: flex;
+                gap: 3rem;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                .item {
+                    list-style: none;
+    
+                    &:hover {
+                        .link {
+                            color: rgb(25, 25, 25);
+                            transition: color 0.3s ease;  
+                        }
+                    }
+                    .link {
+                        color: white;
+                        font-weight: 600;
+                        text-decoration: none;  
+                        transition: color 0.3s ease;  
+                    }
+                }
+            }
+        }
+
+        .social {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+}
