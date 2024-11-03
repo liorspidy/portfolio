@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+        "navbar     navbar  navbar  navbar  navbar"
+        "hero   hero    hero    hero    hero"
+        "sidebar content content content content"
+        "footer";
+}
+
+.navbar {
+    background-color: purple;
+    height: 50px;
+    grid-area: navbar;
+}
+.hero {
+    background-color: pink;
+    height: 80px;
+    grid-area: conherotent;
+}
+.content {
+    background-color: red;
+    grid-area: content;
+    min-height: 100px;
+    height: 100%;
+}
+.sidebar {
+    background-color: lightblue;
+    grid-area: sidebar;
+}
+.footer {
+    background-color: yellow;
+    grid-area: footer;
+}

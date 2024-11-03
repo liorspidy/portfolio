@@ -21,7 +21,11 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  height: 100dvh;
+  overflow: auto;
+  scroll-snap-type: y proximity;
+  overscroll-behavior-y: contain;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -30,9 +34,11 @@ h1 {
 }
 
 button {
+  font-family: 'Poppins', sans-serif;
   cursor: pointer;
 }
 
 section {
   padding-inline: 24px;
+  height: 100dvh;
 }
